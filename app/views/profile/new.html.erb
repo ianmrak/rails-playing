@@ -1,0 +1,33 @@
+<h1>This is my test view</h1>
+
+<%= form_for :profile, url: profiles_path do |p| %>
+
+<span>
+  <%= p.label :name %>
+  <br>
+  <%= p.text_field :name %>
+</span>
+
+<span>
+  <%= p.label :age %>
+  <br>
+  <%= p.text_field :age %>
+</span>
+
+<span>
+  <%= p.label :gender %>
+  <br>
+  <%= p.text_field :gender %>
+</span>
+
+<span>
+  <%= p.label :profession %>
+  <br>
+  <%= p.text_field :profession %>
+</span>
+
+<p>
+  <%= f.submit %>
+</p>
+
+<%= end %>

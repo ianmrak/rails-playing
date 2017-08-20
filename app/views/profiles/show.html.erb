@@ -1,0 +1,14 @@
+<p>Here's yo' name:</p>
+<%= @profile.name %>
+
+<p>Here's yo' age:</p>
+<%= @profile.age %>
+
+<p>Here's yo' genda:</p>
+<%= @profile.gender %>
+
+<p>Who is your daddy, and what does he do?</p>
+<%= @profile.profession %>
+
+<%= link_to 'Back', profile_path %>
+<%= link_to 'Edit', edit_profile_path(profile) %>

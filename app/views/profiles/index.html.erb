@@ -1,0 +1,26 @@
+<h1>List of Profiles</h1>
+
+<div class="profiles">
+<% @profiles.each do |profile| %>
+<p>Profile # <%= profile.id %></p>
+
+<span>Name:
+  <%= profile.name %><br>
+</span>
+
+<span>Age:
+  <%= profile.age %><br>
+</span>
+
+<span>Gender:
+  <%= profile.gender %><br>
+</span>
+
+<span>Profession:
+  <%= profile.profession %><br>
+</span>
+
+<%= link_to 'Show', profile_path(profile) %>
+<%= link_to 'Edit', edit_profile_path(profile) %>
+<% end %>
+</div>

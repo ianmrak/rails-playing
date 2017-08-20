@@ -1,0 +1,31 @@
+<%= form_for :profile, url: profiles_path do |profile| %>
+
+<p>
+  <%= profile.label :name %>
+  <br>
+  <%= profile.text_field :name %>
+</p>
+
+<p>
+  <%= profile.label :age %>
+  <br>
+  <%= profile.text_field :age %>
+</p>
+
+<p>
+  <%= profile.label :gender %>
+  <br>
+  <%= profile.text_field :gender %>
+</p>
+
+<p>
+  <%= profile.label :profession %>
+  <br>
+  <%= profile.text_field :profession %>
+</p>
+
+<p>
+  <%= profile.submit %>
+</p>
+
+<% end %>
